@@ -114,7 +114,7 @@ public class Floor
 		switch(size)
 		{
 		case 1:
-			return new Room(5*Room.randInt(4,6),2*Room.randInt(4,6),0,0);
+			return new Room(Room.randInt(15,40),Room.randInt(5,25),0,0);
 		case 2:
 			return new Room(5*Room.randInt(2,3),2*Room.randInt(2,3),0,0);
 		case 3:
@@ -381,6 +381,7 @@ public class Floor
 		//changes world size
 		this.width = x;
 		this.height = y;
+		this.level = new char[x][y]
 	}
 	
 	private void changeNumRooms(int a)
